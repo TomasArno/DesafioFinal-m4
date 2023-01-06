@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  */
+
+.about-me {
+  background-color: #192130;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 38px;
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.about-me__info {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media (min-width: 1440px) {
+  .about-me__info {
+    background-color: rgba(151, 151, 151, 0.073);
+    border-radius: 3px;
+    width: 600px;
+    height: 400px;
+  }
+}
+
+.about-me__title {
+  background-color: rgba(151, 151, 151, 0.269);
+  border-radius: 3px;
+  border-top: solid rgba(255, 166, 0, 0.69);
+  border-left: solid rgba(255, 166, 0, 0.644);
+
+  padding: 10px;
+
+  color: white;
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about-me__description {
+  color: #eeeeeebf;
+
+  display: flex;
+  flex-grow: 1;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .about-me__description {
+    font-size: 21px;
+  }
+}
+@media (min-width: 1440px) {
+  .about-me__description {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.about-me__img {
+  height: 300px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .about-me__img {
+    height: 330px;
+  }
+}
+@media (min-width: 1440px) {
+  .about-me__img {
+    height: 400px;
+  }
+}
+
+/*  */
+
+.services {
+  background-color: #13171c;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__title {
+  background-color: rgba(151, 151, 151, 0.269);
+  border-radius: 3px;
+  border-top: solid rgba(255, 166, 0, 0.69);
+  border-right: solid rgba(255, 166, 0, 0.644);
+
+  margin: 30px 0;
+  padding: 10px;
+  align-self: center;
+
+  color: white;
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: center;
+}

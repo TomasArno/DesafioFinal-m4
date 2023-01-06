@@ -1,0 +1,74 @@
+.footer {
+  background-color: #0f1113;
+  border-top: solid rgba(255, 166, 0, 0.611);
+
+  padding: 50px 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.footer__item-redirect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.footer__item-img {
+  width: 18px;
+  height: 20px;
+}
+
+.footer__item-section > a {
+  color: white;
+  text-decoration: none;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer__social-media {
+  display: flex;
+  column-gap: 24px;
+}
+
+.footer__app-logo {
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+}
+
+.copyrigth {
+  color: #eeeeeebf;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer__item-section-home {
+  color: #eeeeeebf;
+  width: 54px;
+}
+
+.footer__item-section-service {
+  color: #eeeeeebf;
+  width: 80px;
+}
+
+.footer__item-section-contact {
+  color: #eeeeeebf;
+  width: 85px;
+}

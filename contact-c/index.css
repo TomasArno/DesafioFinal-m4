@@ -1,0 +1,127 @@
+.contact {
+  background-color: #13171c;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    column-gap: 10%;
+  }
+}
+@media (min-width: 1440px) {
+  .contact {
+    column-gap: 20%;
+  }
+}
+
+.contact__title {
+  background-color: rgba(151, 151, 151, 0.139);
+  border-radius: 3px;
+  border-top: solid rgba(255, 166, 0, 0.644);
+  border-left: solid rgba(255, 166, 0, 0.69);
+
+  padding: 10px;
+
+  align-self: center;
+
+  color: white;
+  font-family: Poppins;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact__title {
+    position: relative;
+    bottom: 260px;
+  }
+}
+
+.form {
+  border: 1px solid rgba(255, 166, 0, 0.75);
+  border-radius: 15px;
+  padding: 20px 50px;
+
+  width: 80%;
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    max-width: 470px;
+  }
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.form__input-title {
+  color: white;
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__input {
+  background-color: #393e4680;
+  border: 1px solid orange;
+  border-radius: 12px;
+
+  height: 59px;
+  padding: 0 10px;
+
+  color: white;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form__textarea {
+  background-color: #393e4680;
+  border-radius: 12px;
+
+  height: 240px;
+  padding: 10px;
+
+  color: white;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.button {
+  background: orange;
+  border-radius: 24px;
+
+  height: 55px;
+
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
