@@ -1,5 +1,6 @@
 .contact {
   background-color: #13171c;
+  padding: 20px;
 
   height: 100vh;
 
@@ -8,6 +9,12 @@
   align-items: center;
   justify-content: center;
   row-gap: 40px;
+}
+
+@media (min-height: 700px) {
+  .contact {
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -28,23 +35,30 @@
   border-top: solid rgba(255, 166, 0, 0.644);
   border-left: solid rgba(255, 166, 0, 0.69);
 
-  padding: 10px;
+  padding: 5px;
 
   align-self: center;
 
   color: white;
   font-family: Poppins;
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 80px;
   letter-spacing: 0em;
   text-align: center;
 }
 
+@media (min-height: 700px) {
+  .contact__title {
+    font-size: 42px;
+    padding: 10px;
+  }
+}
+
 @media (min-width: 768px) {
   .contact__title {
     position: relative;
-    bottom: 260px;
+    bottom: 210px;
   }
 }
 
@@ -53,17 +67,18 @@
   border-radius: 15px;
   padding: 20px 50px;
 
-  width: 80%;
-  max-width: 400px;
+  width: 60%;
+  height: 470px;
+  max-width: 470px;
 
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 15px;
 }
 
-@media (min-width: 1024px) {
+@media (min-height: 700px) {
   .form {
-    max-width: 470px;
+    height: 500px;
   }
 }
 
@@ -89,7 +104,7 @@
   border: 1px solid orange;
   border-radius: 12px;
 
-  height: 59px;
+  height: 35px;
   padding: 0 10px;
 
   color: white;
@@ -98,11 +113,16 @@
   font-weight: 400;
 }
 
+@media (min-height: 700px) {
+  .form__input {
+    height: 59px;
+  }
+}
+
 .form__textarea {
   background-color: #393e4680;
   border-radius: 12px;
-
-  height: 240px;
+  height: 140px;
   padding: 10px;
 
   color: white;
@@ -111,11 +131,16 @@
   font-weight: 400;
 }
 
+@media (min-height: 700px) {
+  .form__textarea {
+    height: 140px;
+  }
+}
+
 .button {
   background: orange;
   border-radius: 24px;
-
-  height: 55px;
+  height: 40px;
 
   color: white;
   font-family: Poppins;
@@ -124,4 +149,10 @@
   line-height: 27px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+@media (min-height: 700px) {
+  .button {
+    height: 50px;
+  }
 }
